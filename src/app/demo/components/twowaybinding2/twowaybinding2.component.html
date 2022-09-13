@@ -1,0 +1,74 @@
+
+
+
+
+
+<div class="grid">
+    <div class="col-12">    
+        <div id="hero" class="grid py-4 px-4 lg:px-8 relative">
+            <div class="mx-4 md:mx-8 mt-0 md:mt-4">
+                <h1 class="text-6xl font-bold text-gray-900 line-height-2"><span class="font-light block">Binding</span>TWO WAY BINDING</h1>
+                <p class="font-normal text-2xl line-height-3 md:mt-3 text-gray-700">Sed blandit libero volutpat sed cras. Fames ac turpis egestas integer. Placerat in egestas erat... </p>
+                <button pButton pRipple type="button" label="Get Started" class="p-button-rounded text-xl border-none mt-3 bg-blue-500 font-normal line-height-3 px-3 text-white"></button>
+            </div>
+
+            <img src="assets/demo/images/courses/MVVM.png" alt="" height="120" class="w-fluid sm:mt-5 md:mt-0" style="right:10%;">
+
+            
+        </div>
+        <div class="card">
+            <h5 class="">TwoWayBinding <i class="pi pi-arrows-h" style="font-size: 1.5rem"></i></h5>
+            <div class="grid">
+                <div class="col-5 flex align-items-center justify-content-center">
+                    <div class="p-fluid">
+                        <div class="field">
+                            <label for="username">Username</label>
+                            <input pInputText id="username" type="text"  [(ngModel)]="login"/>
+                        </div>
+                        <div class="field">
+                            <label for="password">Password</label>
+                            <input pInputText id="password" type="password" [(ngModel)]="mdp"/>
+                        </div>
+                        <p class="line-height-3 mb-2">Username : {{ login }}</p>
+                        <p class="line-height-3 mb-2">Passord : {{ mdp }}</p>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <p-divider layout="vertical">
+                        <b>OR</b>
+                    </p-divider>
+                </div>
+                <div class="col-5 p-fluid align-items-center justify-content-center">
+
+
+                        
+                            <div class="field-checkbox">
+                                <p-checkbox [(ngModel)]="var1" [binary]="true"  label="Var1 = {{var1}}"></p-checkbox>
+                            </div>
+                        
+
+
+
+                    <p-divider layout="horizontal" align="center">
+                        <span class="p-tag">Badge</span>
+                    </p-divider>
+
+                    <div class="field">
+                        <label htmlFor="name3">Ma var 2 = {{ var2 }}</label>
+                        <input pInputText id="name3" type="text" [(ngModel)]="var2" />
+
+                    </div>
+
+                    <p-divider align="right">
+                        <p-button label="Button" icon="pi pi-search" styleClass="p-button-outlined"></p-button>
+                    </p-divider>
+
+                    <div class="field">
+                        <label htmlFor="var3">Var 3 = {{ var3 }}</label>
+                        <p-inputNumber [(ngModel)]="var3" [showButtons]="true" id="var3"></p-inputNumber>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+<div class="grid  p-fluid">
+
+    <div class="col-12 lg:col-12 xl:col-12">
+        <div class="card mb-0">
+            <div class="flex justify-content-between mb-3">
+                <p-inputNumber [showButtons]="true" [(ngModel)]="nb"></p-inputNumber>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-12 lg:col-4 xl:col-4">
+        <div class="card mb-0">
+            <div class="flex justify-content-between mb-3">
+                <p>{{ nb | Cdate }}</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-12 lg:col-4 xl:col-4">
+        <div class="card mb-0">
+            <div class="flex justify-content-between mb-3">
+                <p>{{ nb | Cdegree }}</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-12 lg:col-4 xl:col-4">
+        <div class="card mb-0">
+            <div class="flex justify-content-between mb-3">
+                <p>{{ nb | CrevNumber }}</p>
+            </div>
+
+        </div>
+    </div>
+</div>
